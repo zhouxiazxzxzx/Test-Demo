@@ -1,0 +1,51 @@
+//na-input 相关样式
+@import '../../../public';
+@import '../../../mixin/mixin';
+
+.ns-input {
+  position: relative;
+  display: inline-block;
+  .el-input {
+    height: 100%;
+  }
+  .el-textarea {
+    textarea {
+      height: inherit;
+    }
+  }
+  .ns-input__icon {
+    position: absolute;
+    width: 35px;
+    line-height: inherit;
+    height: 100%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    @include box-sizing;
+    // 初始状态 验证显示图标 显隐/颜色
+    &.error {
+      display: none;
+      svg.ns-icon-svg {
+        color: $--color-danger;
+      }
+    }
+    &.success {
+      display: none;
+      svg.ns-icon-svg {
+        color: $--color-success;
+      }
+    }
+    // 初始状态 常规显示图标 显隐
+    &.normal {
+      display: block;
+    }
+  }
+}
+
+/*.el-input {*/
+/*.el-input__inner {*/
+/*height: 100%;*/
+/*}*/
+/*}*/

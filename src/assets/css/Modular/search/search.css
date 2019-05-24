@@ -1,0 +1,395 @@
+/*搜索*/
+
+.search {
+  position: relative;
+  display: inline-block;
+}
+
+.searchBody {
+  float: left;
+}
+
+.searchBody > div {
+  float: left;
+  position: relative;
+  margin-right: 16px;
+}
+
+.searchBody:after {
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+.searchBody label {
+  text-align: right;
+  line-height: 32px;
+  height: 32px;
+  padding-right: 5px;
+  float: left;
+  font-size: 14px;
+  color: #666666;
+}
+
+button.btn-senior {
+  margin-left: 8px;
+}
+
+.tab-box-name:hover .opacity0 {
+  opacity: 1;
+}
+
+.filter-ipt-wrap .list-menu {
+  font-size: 14px;
+  width: 140px;
+  position: absolute;
+  z-index: 900;
+  background: rgb(255, 255, 255);
+  border: 1px solid #d1dbe5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+}
+.filter-ipt-wrap .list-menu > li:hover {
+  background: #e4e8f1;
+}
+
+.filter-ipt-wrap li {
+  padding: 7px 20px;
+  color: #666;
+  cursor: pointer;
+  line-height: 22px;
+}
+
+.filter-ipt-wrap li:hover {
+  background-color: #f4f4f4;
+}
+
+.filter-ipt-wrap .selected {
+  background: #e4e8f1;
+}
+
+.filter-result-c {
+  width: 100%;
+  overflow: auto;
+  float: left;
+}
+
+.filter-result-c li {
+  background: #f4f6f9;
+  border-radius: 3px;
+  height: 18px;
+  color: #666666;
+  padding: 7px 13px;
+  list-style: none;
+  float: left;
+}
+
+.filtering .el-dialog--tiny {
+  width: 600px;
+}
+
+.filtering .condition {
+  border-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 24px;
+}
+
+.filtering .condition .add-condition > label {
+  position: absolute;
+  top: 6px;
+  left: -90px;
+}
+
+.filtering .condition label {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+}
+
+.filtering .condition .el-input {
+  width: 355px;
+}
+
+.filtering .add-condition .el-select,
+.filtering .add-condition .el-input {
+  width: 110px !important;
+  margin-right: 8px;
+}
+
+.filtering .add-condition {
+  margin-left: 82px;
+  position: relative;
+}
+
+.filtering .add-condition .delete-condition {
+  padding-left: 0px;
+  color: #dadada;
+}
+
+.filtering .add-condition .delete-condition:hover {
+  color: #999;
+}
+
+.filtering .add {
+  margin-left: 65px;
+  color: #0a7af8;
+  cursor: pointer;
+}
+
+.filtering .save-filter,
+.filtering .default-filter {
+  margin-left: 60px;
+  margin-top: 20px;
+  border-top: 1px dashed #e0e0e0;
+  padding-top: 16px;
+}
+
+.filtering .save-filter .el-input {
+  margin-left: 40px;
+  width: 200px;
+}
+
+.filter-option {
+  color: #0a7af8 !important;
+}
+
+.filter-select {
+  position: absolute;
+  left: 355px;
+  top: 41px;
+  width: 198px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #ffffff;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  padding: 6px 0;
+}
+
+.filter-select li {
+  font-size: 14px;
+  padding: 0px 10px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666666;
+  height: 32px;
+  line-height: 32px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.filter-select li:hover {
+  background-color: #f4f4f4;
+}
+
+.manageBody {
+  padding: 0 16px;
+}
+
+.manageBody p {
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.filter-prompt {
+  font-size: 14px;
+  color: #666666;
+  text-align: left;
+}
+
+.filtersManage {
+  margin-top: 21px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  width: 530px;
+  height: 177px;
+  overflow: auto;
+}
+.filtersManage::-webkit-scrollbar {
+  width: 3px;
+  height: 10px;
+}
+.win .ns-container .searchBody .el-dialog .el-dialog__body {
+  height: 345px;
+}
+.filtersManage li {
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+
+.filtersManage li:hover {
+  background: #f4f4f4;
+}
+
+.filtersManage li:hover .hide {
+  cursor: pointer;
+  display: block;
+}
+
+.filtersManage li:hover .opacity0 {
+  opacity: 1;
+}
+
+.filtersManage .more-options {
+  position: absolute;
+  right: 2px;
+  z-index: 99;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid #d9d9d9;
+  width: 80px;
+}
+
+.filtersManage .more-options li {
+  text-align: center;
+  color: #666666;
+}
+
+.red {
+  color: red;
+}
+
+.width200 {
+  width: 200px !important;
+}
+
+.errorborder {
+  border: 1px solid #ff6600 !important;
+  border-radius: 3px;
+}
+
+.topborder {
+  border-top: 1px solid #eaeaea;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.filter-selected {
+  background-color: #f4f4f4;
+}
+.el-input__icon {
+  line-height: 35px;
+}
+.el-input--suffix {
+  cursor: pointer;
+}
+
+/*=========================================*/
+
+::-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+input:-ms-input-placeholder {
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+.el-message-box__wrapper {
+  z-index: 12345 !important;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.pt24 {
+  padding-top: 24px !important;
+}
+
+.pb16 {
+  padding-bottom: 16px !important;
+}
+
+.pb24 {
+  padding-bottom: 24px !important;
+}
+
+.pr4 {
+  padding-right: 4px !important;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+/*.ns-container-right {*/
+/*padding: 24px 16px 0px 0px;*/
+/*box-sizing: border-box;*/
+/*paddin-left: 250px;*/
+/*height: calc(100vh - 38px - 0px - 0px - 50px - 10px - 10px - 1px);*/
+/*overflow: hidden;*/
+/*box-sizing: border-box;*/
+/*border-left: 1px solid #f4f6f9;*/
+/*position: relative;*/
+/*}*/
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.btns {
+  float: right;
+}
+
+.el-table__empty-text {
+  display: none;
+}
+
+.btns .el-tooltip {
+  padding: 8px 10px;
+}
+
+/*message-box按钮按确定在左，取消在右排布*/
+.el-message-box-oppositeBtns .el-message-box__btns .el-button:first-of-type {
+  float: right;
+  margin-left: 10px;
+}
+
+.el-message-box-oppositeBtns .el-message-box__btns .el-button:last-of-type {
+  float: right;
+}
+/*修改*/
+#search {
+  padding-bottom: 10px;
+  min-height: 32px;
+}
+#search .filter-result-c > li {
+  position: absolute;
+  z-index: 8;
+}
+.filterResultHeight {
+  height: 32px;
+}

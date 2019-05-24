@@ -1,0 +1,82 @@
+.invariable-form-wrap {
+  .sgmentingLine {
+    display: block;
+    width: 826px;
+    //height: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ededed;
+  }
+}
+.invariable {
+  .delete{
+    margin: 5px 3px 0;
+  }
+
+  .delete_up{
+    height: 20px;
+    display: inline-block;
+    margin-left: 147px;
+    display: none;
+  }
+
+  .form_link_underLine {
+    color: #0a7af8;
+    cursor: pointer;
+  }
+
+  .form_link_underLine:hover {
+    text-decoration: underline;
+  }
+  .el-form--inline .el-form-item.toBeBlock {
+    display: block;
+  }
+  .el-form--inline .el-form-item.toBeBlock {
+    display: block;
+    label {
+      float: left;
+    }
+  }
+  .el-group-top-line {
+    //padding-top: 14px;
+    // border-top: 1px solid #EDEDED;
+  }
+  .width200 {
+    width: 220px;
+  }
+  .selectFuzzyQuery{
+    width: 170px;
+  }
+  .el-form-item__content {
+    min-width: 100px;
+  }
+  .el-form-item {
+    margin-right: 0;
+  }
+  .el-form-item__error {
+    position: absolute;
+    height: 24px;
+    line-height: 20px;
+    font-size: 12px;
+    top: -20px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(255, 81, 49);
+  }
+  .el-form-item__error::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    width: 0px;
+    height: 0px;
+    border-top: 0.4rem solid rgb(255, 81, 49);
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+  }
+  .el-input.is-disabled .el-input__inner {
+    border-color: #e4e7ed !important;
+  }
+}
