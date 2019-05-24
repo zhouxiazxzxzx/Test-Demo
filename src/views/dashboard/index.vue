@@ -1,7 +1,11 @@
 <template>
   <div class="win" id="dashboard">
     <div class="dashboard-container ns-container">
-      <h1>Hello! It is Dashboard</h1>
+      <h1>{{title}}</h1>
+      <div>
+        <p>the window width: {{width}}px</p>
+        <p>the window height: {{height}}px</p>
+      </div>
       <el-button type="primary" class="btnCss" @click="back()">退出</el-button>
     </div>
   </div>
@@ -14,7 +18,9 @@
     components: {},
     data() {
       return {
-        father: 'Welcome to Your Vue.js App',
+        title: 'Welcome to Your Vue.js App',
+        width: window.innerWidth,
+        height: window.innerHeight,
       };
     },
     methods: {
@@ -24,6 +30,17 @@
         });
       }
     },
+    mounted() {
+      this.resizeFunc = () => {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+      };
+      window.addEventListener('resize', this.resizeFunc);
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.resizeFunc);
+      this.resizeFunc = null;
+    }
   };
 </script>
 <style rel="stylesheet/scss" lang="scss" scoped>
