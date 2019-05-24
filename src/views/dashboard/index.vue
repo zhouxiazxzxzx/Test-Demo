@@ -2,11 +2,11 @@
   <div class="win" id="dashboard">
     <div class="dashboard-container ns-container">
       <h1>{{title}}</h1>
+      <el-button type="primary" class="btnCss" @click="back()">退出</el-button>
       <div>
         <p>the window width: {{width}}px</p>
         <p>the window height: {{height}}px</p>
       </div>
-      <el-button type="primary" class="btnCss" @click="back()">退出</el-button>
     </div>
   </div>
 </template>
@@ -48,7 +48,7 @@
     background: #000 !important;
     .dashboard-container {
       text-align: center;
-      h1 {
+      h1, p {
         font-size: 32px;
         color: #fff;
         padding: 20px;

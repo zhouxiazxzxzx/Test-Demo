@@ -1,8 +1,11 @@
 <!--login-->
 <template>
-  <div>
-    <h1>login</h1>
-    <el-button type="primary" class="btnCss" @click="login()">登录</el-button>
+  <div class="win">
+    <div class="container">
+      <h1>login</h1>
+      <el-button type="primary" class="btnCss" @click="login()">登录</el-button>
+    </div>
+
   </div>
 </template>
 <script>
@@ -20,5 +23,16 @@
     },
   };
 </script>
-<style rel="stylesheet/scss" lang="scss">
+<style rel="stylesheet/scss" lang="scss" scoped>
+  .win {
+    background: #000 !important;
+    .container {
+      text-align: center;
+      h1,p {
+        font-size: 32px;
+        color: #fff;
+        padding: 20px;
+      }
+    }
+  }
 </style>
