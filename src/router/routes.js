@@ -5,10 +5,10 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 Vue.use(Router);
-let _dynamic = file => resolve => require(['@/views/' + file + '.vue'], resolve);
-const App = resolve => require(['@/App'], resolve);
-const Front = _dynamic('front/index');
-const Layout = resolve => require(['@/views/common/Layout.vue'], resolve);
+
+import Front from '@/views/front/index.vue'
+import Layout from '@/views/common/Layout.vue'
+
 const iniView = '/front/login';
 
 export const constantRouterMap = [
@@ -26,13 +26,7 @@ export const constantRouterMap = [
         component: () => import('@/views/login/login'),
         name: '登录',
         meta: { type: 'front' },
-      },
-      {
-        path: 'loginStation',
-        component: () => import('@/views/login/loginStation'),
-        name: '登录中转',
-        meta: { type: 'loginStation' },
-      },
+      }
     ],
   },
 
